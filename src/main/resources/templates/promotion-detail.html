@@ -28,9 +28,9 @@
   <!-- Header -->
   <div class="container mt-3">
     <div class="d-flex justify-content-between align-items-center">
-      <img th:src="${settings.logoPath}" alt="City Ford Logo" height="50">
+      <img th:src="${settings.logoPath}" alt="Porsche Logo" height="50">
       <div class="text-end">
-        <h5 class="mb-0 fw-bold text-dark">CITY FORD – FORD BÌNH TRIỆU</h5>
+        <h5 class="mb-0 fw-bold text-dark">Porsche - Đại lý chính thức của Porsche Việt Nam</h5>
         <small class="text-danger">Hotline bán hàng: <span th:text="${settings.hotline}">079-256-2288</span></small>
       </div>
     </div>
@@ -128,12 +128,12 @@
           <h5 class="text-primary">Thông tin liên hệ</h5>
           <p>📞 <span th:text="${settings.hotline}">079-256-2288</span></p>
           <p>📱 Zalo: <a th:href="'https://zalo.me/' + ${settings.zalo}" target="_blank" th:text="${settings.zalo}">0792562288</a></p>
-          <p>📧 Email: <span th:text="${settings.email}">info@cityford.vn</span></p>
+          <p>📧 Email: <span th:text="${settings.email}">info@porsche</span></p>
           <p>📍 Địa chỉ: <span th:text="${settings.address}">218 Quốc lộ 13, TP. Thủ Đức</span></p>
           <hr>
           <h6 class="text-secondary">Ưu đãi nổi bật</h6>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-dark">Giảm giá Ford Everest</a></li>
+            <li><a href="#" class="text-dark">Giảm giá Porsche 718</a></li>
             <li><a href="#" class="text-dark">Tặng bảo hiểm vật chất</a></li>
           </ul>
         </div>
@@ -144,10 +144,10 @@
   <!-- Footer -->
   <footer class="bg-dark text-white text-center mt-5 p-4">
     <div class="container">
-      <p th:text="${settings.footerText}">CITY FORD BÌNH TRIỆU - Đại lý chính thức...</p>
+      <p th:text="${settings.footerText}">Porsche - Đại lý chính thức của Porsche Việt Nam</p>
       <p>📞 Hotline: <a th:href="'tel:' + ${settings.hotline}" class="text-white" th:text="${settings.hotline}">079-256-2288</a></p>
       <p>📱 Zalo: <a th:href="'https://zalo.me/' + ${settings.zalo}" class="text-white" target="_blank" th:text="${settings.zalo}">079-256-2288</a></p>
-      <p>🌐 Website: <a th:href="${settings.website}" class="text-white" target="_blank" th:text="${settings.website}">www.fordbinhtrieu.com</a></p>
+      <p>🌐 Website: <a th:href="${settings.website}" class="text-white" target="_blank" th:text="${settings.website}">www.porsche.vn</a></p>
     </div>
   </footer>
 
