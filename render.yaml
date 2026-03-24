@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: forddealer
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: ${SPRING_DATASOURCE_URL}
+      - key: SPRING_DATASOURCE_USERNAME
+        value: ${SPRING_DATASOURCE_USERNAME}
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: ${SPRING_DATASOURCE_PASSWORD}
